@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "pdf-scanner",
+  "name": "Simple react application for manipulating scanned pdf images",
   "icons": [
     {
       "src": "favicon.ico",
