@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmDialog component can be rendered 1`] = `
+<WithStyles(ForwardRef(Dialog))
+  aria-describedby="alert-dialog-description"
+  aria-labelledby="alert-dialog-title"
+  onClose={[MockFunction]}
+  open={false}
+>
+  <WithStyles(ForwardRef(DialogTitle))
+    id="alert-dialog-title"
+  >
+    Confirm new document?
+  </WithStyles(ForwardRef(DialogTitle))>
+  <WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogContentText))
+      id="alert-dialog-description"
+    >
+      Creating a new document will clear any editing done on the current document.
+    </WithStyles(ForwardRef(DialogContentText))>
+  </WithStyles(ForwardRef(DialogContent))>
+  <WithStyles(ForwardRef(DialogActions))>
+    <WithStyles(ForwardRef(Button))
+      autoFocus={true}
+      color="primary"
+      onClick={[MockFunction]}
+    >
+      Disagree
+    </WithStyles(ForwardRef(Button))>
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      onClick={[MockFunction]}
+    >
+      Agree
+    </WithStyles(ForwardRef(Button))>
+  </WithStyles(ForwardRef(DialogActions))>
+</WithStyles(ForwardRef(Dialog))>
+`;

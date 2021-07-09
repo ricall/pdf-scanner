@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageAppendPdf component can be rendered 1`] = `
+<WithStyles(ForwardRef(Paper))
+  className="makeStyles-paper-1"
+  elevation={0}
+>
+  <input
+    accept="application/pdf"
+    id="file-upload"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none ",
+      }
+    }
+    type="file"
+  />
+  <label
+    htmlFor="file-upload"
+  >
+    <WithStyles(ForwardRef(Button))
+      className="makeStyles-upload-2"
+      component="span"
+    >
+      label
+    </WithStyles(ForwardRef(Button))>
+  </label>
+</WithStyles(ForwardRef(Paper))>
+`;

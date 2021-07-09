@@ -1,3 +1,4 @@
+import FileSaver from 'file-saver';
 import * as fs from "fs";
 import { pdfReducer } from '../reducers';
 import {
@@ -7,10 +8,14 @@ import {
     movePageRight,
     newDocument,
     rotatePage,
+    saveDocument,
+    setCurrentPage,
     updateMetadata
 } from "../actions";
 import { defaultSettings } from "../components/SettingsDrawer";
 import { initialState, PdfDocument } from "../types";
+
+jest.mock('file-saver', () => ({ saveAs: jest.fn() }));
 
 describe('reducer', () => {
 
@@ -40,22 +45,48 @@ describe('reducer', () => {
         const state = pdfReducer(initialState, await loadDocument(defaultSettings(), './test-document.pdf', contents.buffer));
 
         expect(state.bytes).toBe(contents.buffer);
-        expect(state.pages).toHaveLength(10);
-        expect(state.pages[0]).toEqual({
-            page: 0,
-            angle: 0,
-        });
+        expect(state.pages).toHaveLength(5);
+        expect(state.pages.map(p => p.angle)).toEqual([ 0, 0, 0, 0, 0 ]);
         expect(state.name).toBe('./test-document.pdf');
         expect(state.metadata).toEqual({
             title: 'Test Document',
-            author: 'Richard Allwood',
+            author: '',
             subject: 'Document for testing pdf-scanner',
-            creator: 'pdf-lib',
+            creator: '',
             keywords: 'test pdf-scanner',
-            producer: 'pdf-scanner test',
+            producer: '',
             creationDate: new Date('2021-07-02T01:03:00.000Z'),
             modificationDate: state.metadata.modificationDate,
         });
+    });
+
+    it('should rotate pages', async () => {
+        const contents = fs.readFileSync('./test-document.pdf');
+        const state = pdfReducer(initialState, await loadDocument({
+            defaultAuthor: 'John Smith',
+            autoRotate: true
+        }, './test-document.pdf', contents.buffer));
+
+        expect(state.bytes).toBe(contents.buffer);
+        expect(state.pages).toHaveLength(5);
+        expect(state.pages.map(p => p.angle)).toEqual([ 0, 180, 0, 180, 0 ]);
+        expect(state.name).toBe('./test-document.pdf');
+        expect(state.metadata).toEqual({
+            title: 'Test Document',
+            author: 'John Smith',
+            subject: 'Document for testing pdf-scanner',
+            creator: 'scanner',
+            keywords: 'test pdf-scanner',
+            producer: '',
+            creationDate: new Date('2021-07-02T01:03:00.000Z'),
+            modificationDate: state.metadata.modificationDate,
+        });
+    });
+
+    it('should be able to set the current page', () => {
+        const state = pdfReducer(originalState, setCurrentPage(5));
+
+        expect(state.currentPage).toBe(5);
     });
 
     it('should be able to create a new pdf document', () => {
@@ -125,6 +156,12 @@ describe('reducer', () => {
 
     describe('delete actions', () => {
 
+        it('deleting a non-existant page returns the original state', () => {
+           const state = pdfReducer(originalState, deletePage(4));
+
+           expect(state).toBe(originalState);
+        });
+
         it('should be able to delete page 1', () => {
             const state = pdfReducer(originalState, deletePage(1));
 
@@ -171,6 +208,24 @@ describe('reducer', () => {
         expect(state.metadata.keywords).toEqual('keywords');
         expect(state.metadata.creationDate).toEqual(new Date('2021-01-30T02:00:01.000Z'));
         expect(state.metadata.modificationDate).toEqual(new Date('2021-01-30T02:01:02.000Z'));
+    });
+
+    it('should be possible to save a document', async () => {
+
+        const contents = fs.readFileSync('./test-document.pdf');
+        const state = pdfReducer(initialState, await loadDocument(defaultSettings(), './test-document.pdf', contents.buffer));
+
+        const action = await saveDocument(defaultSettings(), state);
+        expect(state.name).toBe('./test-document.pdf');
+        expect(state.pages.map(p => p.angle)).toEqual([ 0, 0, 0, 0, 0 ]);
+        expect(state.currentPage).toBe(1);
+        expect(state.metadata.title).toEqual('Test Document');
+        expect(state.metadata.author).toEqual('');
+        expect(state.metadata.subject).toEqual('Document for testing pdf-scanner');
+        expect(state.metadata.producer).toEqual('');
+        expect(state.metadata.creator).toEqual('');
+        expect(state.metadata.keywords).toEqual('test pdf-scanner');
+        expect(state.metadata.creationDate).toEqual(new Date('2021-07-02T01:03:00.000Z'));
     });
 
     it('should be able to handle unknown commands', () => {

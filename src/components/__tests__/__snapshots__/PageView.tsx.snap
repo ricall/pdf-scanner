@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageView component can be rendered 1`] = `
+<WithStyles(ForwardRef(Paper))
+  className="makeStyles-paper-1"
+  elevation={5}
+>
+  <ForwardRef(Page)
+    height={380}
+    onClick={[Function]}
+    pageNumber={2}
+    rotate={180}
+    width={270}
+  >
+    <WithStyles(ForwardRef(SpeedDial))
+      ariaLabel="Actions"
+      className="makeStyles-speedDial-2"
+      direction="left"
+      icon={<WithStyles(ForwardRef(SpeedDialIcon)) />}
+      onClose={[Function]}
+      onOpen={[Function]}
+      open={false}
+    >
+      <WithStyles(ForwardRef(SpeedDialAction))
+        icon={<Memo />}
+        onClick={[Function]}
+        tooltipTitle="Rotate page"
+      />
+      <WithStyles(ForwardRef(SpeedDialAction))
+        icon={<Memo />}
+        onClick={[Function]}
+        tooltipTitle="Move page right"
+      />
+      <WithStyles(ForwardRef(SpeedDialAction))
+        icon={<Memo />}
+        onClick={[Function]}
+        tooltipTitle="Move page left"
+      />
+      <WithStyles(ForwardRef(SpeedDialAction))
+        icon={<Memo />}
+        onClick={[Function]}
+        tooltipTitle="Delete page"
+      />
+    </WithStyles(ForwardRef(SpeedDial))>
+  </ForwardRef(Page)>
+</WithStyles(ForwardRef(Paper))>
+`;

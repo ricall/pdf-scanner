@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component can be rendered 1`] = `
+<div
+  className="App"
+>
+  <ApplicationAppBar
+    onEditMetadata={[Function]}
+    onMenu={[Function]}
+    onNewDocument={[Function]}
+    onSaveDocument={[Function]}
+    pages={0}
+    title="untitled"
+  />
+  <Styled(MuiBox)
+    alignItems="center"
+    className="makeStyles-mainBody-1"
+    display="flex"
+    justifyContent="center"
+  >
+    <PageGrid
+      document={
+        Object {
+          "bytes": ArrayBuffer [],
+          "currentPage": 0,
+          "metadata": Object {
+            "author": "",
+            "creationDate": undefined,
+            "creator": "",
+            "keywords": "",
+            "modificationDate": undefined,
+            "producer": "",
+            "subject": "",
+            "title": "",
+          },
+          "name": "untitled",
+          "pages": Array [],
+        }
+      }
+      onAddDocument={[Function]}
+      onDelete={[Function]}
+      onMoveLeft={[Function]}
+      onMoveRight={[Function]}
+      onRotate={[Function]}
+      setCurrentPage={[Function]}
+    />
+  </Styled(MuiBox)>
+  <ConfirmDialog
+    display={false}
+    onAccept={[Function]}
+    onReject={[Function]}
+  />
+</div>
+`;

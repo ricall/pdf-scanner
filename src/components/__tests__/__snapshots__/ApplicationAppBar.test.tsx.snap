@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ApplicationAppBar component can be rendered 1`] = `
+<div
+  className="makeStyles-grow-1"
+>
+  <WithStyles(ForwardRef(AppBar))
+    position="static"
+  >
+    <WithStyles(ForwardRef(Toolbar))>
+      <WithStyles(ForwardRef(IconButton))
+        className="makeStyles-menuButton-2"
+        color="inherit"
+        edge="start"
+      >
+        <Memo(ForwardRef(MenuOutlinedIcon)) />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-title-3"
+        noWrap={true}
+        variant="h6"
+      >
+         - pdf-scanner
+      </WithStyles(ForwardRef(Typography))>
+      <div
+        className="makeStyles-grow-1"
+      />
+      <div
+        className="makeStyles-sectionDesktop-5"
+      >
+        <WithStyles(ForwardRef(IconButton))
+          color="inherit"
+        >
+          <Memo(ForwardRef(AddIcon)) />
+        </WithStyles(ForwardRef(IconButton))>
+      </div>
+      <WithStyles(ForwardRef(Divider))
+        flexItem={true}
+        light={false}
+        orientation="vertical"
+      />
+      <div
+        className="makeStyles-sectionDesktop-5"
+      >
+        <WithStyles(ForwardRef(IconButton))
+          color="inherit"
+          disableRipple={true}
+        >
+          <WithStyles(ForwardRef(Badge))
+            color="secondary"
+          >
+            <Memo(ForwardRef(InsertDriveFileOutlinedIcon)) />
+          </WithStyles(ForwardRef(Badge))>
+        </WithStyles(ForwardRef(IconButton))>
+        <WithStyles(ForwardRef(IconButton))
+          color="inherit"
+        >
+          <WithStyles(ForwardRef(Badge))
+            color="secondary"
+          >
+            <Memo(ForwardRef(SaveIcon)) />
+          </WithStyles(ForwardRef(Badge))>
+        </WithStyles(ForwardRef(IconButton))>
+        <WithStyles(ForwardRef(IconButton))
+          color="inherit"
+        >
+          <WithStyles(ForwardRef(Badge))
+            color="secondary"
+          >
+            <Memo(ForwardRef(AppsOutlinedIcon)) />
+          </WithStyles(ForwardRef(Badge))>
+        </WithStyles(ForwardRef(IconButton))>
+        <WithStyles(ForwardRef(IconButton))
+          color="inherit"
+        >
+          <WithStyles(ForwardRef(Badge))
+            color="secondary"
+          >
+            <Memo(ForwardRef(BookOutlinedIcon)) />
+          </WithStyles(ForwardRef(Badge))>
+        </WithStyles(ForwardRef(IconButton))>
+      </div>
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+</div>
+`;

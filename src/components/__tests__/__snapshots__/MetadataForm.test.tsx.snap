@@ -1,0 +1,674 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MetadataForm component can be rendered 1`] = `
+<WithStyles(ForwardRef(Dialog))
+  onClose={[Function]}
+  open={true}
+>
+  <form
+    className="makeStyles-root-1"
+    onSubmit={[Function]}
+  >
+    <WithStyles(ForwardRef(DialogTitle))
+      id="form-dialog-title"
+    >
+      Document Metadata
+    </WithStyles(ForwardRef(DialogTitle))>
+    <WithStyles(ForwardRef(DialogContent))>
+      <WithStyles(ForwardRef(DialogContentText))>
+        This meta-data is saved along with the PDF document and is used to provide information about the person and the software that was used to edit the pdf document.
+      </WithStyles(ForwardRef(DialogContentText))>
+      <Component
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "formStateRef": Object {
+              "current": Object {
+                "dirtyFields": Object {},
+                "errors": Object {},
+                "isDirty": false,
+                "isSubmitSuccessful": false,
+                "isSubmitted": false,
+                "isSubmitting": false,
+                "isValid": false,
+                "isValidating": false,
+                "submitCount": 0,
+                "touchedFields": Object {},
+              },
+            },
+            "getIsDirty": [Function],
+            "inFieldArrayActionRef": Object {
+              "current": false,
+            },
+            "namesRef": Object {
+              "current": Object {
+                "array": Set {},
+                "mount": Set {},
+                "unMount": Set {},
+                "watch": Set {},
+                "watchAll": false,
+              },
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "dirtyFields": false,
+                "errors": false,
+                "isDirty": false,
+                "isValid": false,
+                "isValidating": false,
+                "touchedFields": false,
+              },
+            },
+            "register": [Function],
+            "shouldUnmount": undefined,
+            "subjectsRef": Object {
+              "current": Object {
+                "array": _e {
+                  "observers": Array [],
+                },
+                "control": _e {
+                  "observers": Array [],
+                },
+                "state": _e {
+                  "observers": Array [],
+                },
+                "watch": _e {
+                  "observers": Array [],
+                },
+              },
+            },
+            "unregister": [Function],
+            "updateIsValid": [Function],
+            "watchInternal": [Function],
+          }
+        }
+        defaultValue=""
+        name="title"
+        render={[Function]}
+        rules={
+          Object {
+            "required": "Title is required",
+          }
+        }
+      />
+      <Component
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "formStateRef": Object {
+              "current": Object {
+                "dirtyFields": Object {},
+                "errors": Object {},
+                "isDirty": false,
+                "isSubmitSuccessful": false,
+                "isSubmitted": false,
+                "isSubmitting": false,
+                "isValid": false,
+                "isValidating": false,
+                "submitCount": 0,
+                "touchedFields": Object {},
+              },
+            },
+            "getIsDirty": [Function],
+            "inFieldArrayActionRef": Object {
+              "current": false,
+            },
+            "namesRef": Object {
+              "current": Object {
+                "array": Set {},
+                "mount": Set {},
+                "unMount": Set {},
+                "watch": Set {},
+                "watchAll": false,
+              },
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "dirtyFields": false,
+                "errors": false,
+                "isDirty": false,
+                "isValid": false,
+                "isValidating": false,
+                "touchedFields": false,
+              },
+            },
+            "register": [Function],
+            "shouldUnmount": undefined,
+            "subjectsRef": Object {
+              "current": Object {
+                "array": _e {
+                  "observers": Array [],
+                },
+                "control": _e {
+                  "observers": Array [],
+                },
+                "state": _e {
+                  "observers": Array [],
+                },
+                "watch": _e {
+                  "observers": Array [],
+                },
+              },
+            },
+            "unregister": [Function],
+            "updateIsValid": [Function],
+            "watchInternal": [Function],
+          }
+        }
+        defaultValue=""
+        name="author"
+        render={[Function]}
+        rules={
+          Object {
+            "required": "Author is required",
+          }
+        }
+      />
+      <Component
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "formStateRef": Object {
+              "current": Object {
+                "dirtyFields": Object {},
+                "errors": Object {},
+                "isDirty": false,
+                "isSubmitSuccessful": false,
+                "isSubmitted": false,
+                "isSubmitting": false,
+                "isValid": false,
+                "isValidating": false,
+                "submitCount": 0,
+                "touchedFields": Object {},
+              },
+            },
+            "getIsDirty": [Function],
+            "inFieldArrayActionRef": Object {
+              "current": false,
+            },
+            "namesRef": Object {
+              "current": Object {
+                "array": Set {},
+                "mount": Set {},
+                "unMount": Set {},
+                "watch": Set {},
+                "watchAll": false,
+              },
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "dirtyFields": false,
+                "errors": false,
+                "isDirty": false,
+                "isValid": false,
+                "isValidating": false,
+                "touchedFields": false,
+              },
+            },
+            "register": [Function],
+            "shouldUnmount": undefined,
+            "subjectsRef": Object {
+              "current": Object {
+                "array": _e {
+                  "observers": Array [],
+                },
+                "control": _e {
+                  "observers": Array [],
+                },
+                "state": _e {
+                  "observers": Array [],
+                },
+                "watch": _e {
+                  "observers": Array [],
+                },
+              },
+            },
+            "unregister": [Function],
+            "updateIsValid": [Function],
+            "watchInternal": [Function],
+          }
+        }
+        defaultValue=""
+        name="subject"
+        render={[Function]}
+      />
+      <Component
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "formStateRef": Object {
+              "current": Object {
+                "dirtyFields": Object {},
+                "errors": Object {},
+                "isDirty": false,
+                "isSubmitSuccessful": false,
+                "isSubmitted": false,
+                "isSubmitting": false,
+                "isValid": false,
+                "isValidating": false,
+                "submitCount": 0,
+                "touchedFields": Object {},
+              },
+            },
+            "getIsDirty": [Function],
+            "inFieldArrayActionRef": Object {
+              "current": false,
+            },
+            "namesRef": Object {
+              "current": Object {
+                "array": Set {},
+                "mount": Set {},
+                "unMount": Set {},
+                "watch": Set {},
+                "watchAll": false,
+              },
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "dirtyFields": false,
+                "errors": false,
+                "isDirty": false,
+                "isValid": false,
+                "isValidating": false,
+                "touchedFields": false,
+              },
+            },
+            "register": [Function],
+            "shouldUnmount": undefined,
+            "subjectsRef": Object {
+              "current": Object {
+                "array": _e {
+                  "observers": Array [],
+                },
+                "control": _e {
+                  "observers": Array [],
+                },
+                "state": _e {
+                  "observers": Array [],
+                },
+                "watch": _e {
+                  "observers": Array [],
+                },
+              },
+            },
+            "unregister": [Function],
+            "updateIsValid": [Function],
+            "watchInternal": [Function],
+          }
+        }
+        defaultValue=""
+        name="creator"
+        render={[Function]}
+      />
+      <Component
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "formStateRef": Object {
+              "current": Object {
+                "dirtyFields": Object {},
+                "errors": Object {},
+                "isDirty": false,
+                "isSubmitSuccessful": false,
+                "isSubmitted": false,
+                "isSubmitting": false,
+                "isValid": false,
+                "isValidating": false,
+                "submitCount": 0,
+                "touchedFields": Object {},
+              },
+            },
+            "getIsDirty": [Function],
+            "inFieldArrayActionRef": Object {
+              "current": false,
+            },
+            "namesRef": Object {
+              "current": Object {
+                "array": Set {},
+                "mount": Set {},
+                "unMount": Set {},
+                "watch": Set {},
+                "watchAll": false,
+              },
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "dirtyFields": false,
+                "errors": false,
+                "isDirty": false,
+                "isValid": false,
+                "isValidating": false,
+                "touchedFields": false,
+              },
+            },
+            "register": [Function],
+            "shouldUnmount": undefined,
+            "subjectsRef": Object {
+              "current": Object {
+                "array": _e {
+                  "observers": Array [],
+                },
+                "control": _e {
+                  "observers": Array [],
+                },
+                "state": _e {
+                  "observers": Array [],
+                },
+                "watch": _e {
+                  "observers": Array [],
+                },
+              },
+            },
+            "unregister": [Function],
+            "updateIsValid": [Function],
+            "watchInternal": [Function],
+          }
+        }
+        defaultValue=""
+        name="keywords"
+        render={[Function]}
+      />
+      <Component
+        control={
+          Object {
+            "defaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldArrayDefaultValuesRef": Object {
+              "current": Object {},
+            },
+            "fieldsRef": Object {
+              "current": Object {},
+            },
+            "formStateRef": Object {
+              "current": Object {
+                "dirtyFields": Object {},
+                "errors": Object {},
+                "isDirty": false,
+                "isSubmitSuccessful": false,
+                "isSubmitted": false,
+                "isSubmitting": false,
+                "isValid": false,
+                "isValidating": false,
+                "submitCount": 0,
+                "touchedFields": Object {},
+              },
+            },
+            "getIsDirty": [Function],
+            "inFieldArrayActionRef": Object {
+              "current": false,
+            },
+            "namesRef": Object {
+              "current": Object {
+                "array": Set {},
+                "mount": Set {},
+                "unMount": Set {},
+                "watch": Set {},
+                "watchAll": false,
+              },
+            },
+            "readFormStateRef": Object {
+              "current": Object {
+                "dirtyFields": false,
+                "errors": false,
+                "isDirty": false,
+                "isValid": false,
+                "isValidating": false,
+                "touchedFields": false,
+              },
+            },
+            "register": [Function],
+            "shouldUnmount": undefined,
+            "subjectsRef": Object {
+              "current": Object {
+                "array": _e {
+                  "observers": Array [],
+                },
+                "control": _e {
+                  "observers": Array [],
+                },
+                "state": _e {
+                  "observers": Array [],
+                },
+                "watch": _e {
+                  "observers": Array [],
+                },
+              },
+            },
+            "unregister": [Function],
+            "updateIsValid": [Function],
+            "watchInternal": [Function],
+          }
+        }
+        defaultValue=""
+        name="producer"
+        render={[Function]}
+      />
+      <WithStyles(ForwardRef(Grid))
+        container={true}
+        justifyContent="flex-start"
+      >
+        <MuiPickersUtilsProvider
+          utils={[Function]}
+        >
+          <Component
+            control={
+              Object {
+                "defaultValuesRef": Object {
+                  "current": Object {},
+                },
+                "fieldArrayDefaultValuesRef": Object {
+                  "current": Object {},
+                },
+                "fieldsRef": Object {
+                  "current": Object {},
+                },
+                "formStateRef": Object {
+                  "current": Object {
+                    "dirtyFields": Object {},
+                    "errors": Object {},
+                    "isDirty": false,
+                    "isSubmitSuccessful": false,
+                    "isSubmitted": false,
+                    "isSubmitting": false,
+                    "isValid": false,
+                    "isValidating": false,
+                    "submitCount": 0,
+                    "touchedFields": Object {},
+                  },
+                },
+                "getIsDirty": [Function],
+                "inFieldArrayActionRef": Object {
+                  "current": false,
+                },
+                "namesRef": Object {
+                  "current": Object {
+                    "array": Set {},
+                    "mount": Set {},
+                    "unMount": Set {},
+                    "watch": Set {},
+                    "watchAll": false,
+                  },
+                },
+                "readFormStateRef": Object {
+                  "current": Object {
+                    "dirtyFields": false,
+                    "errors": false,
+                    "isDirty": false,
+                    "isValid": false,
+                    "isValidating": false,
+                    "touchedFields": false,
+                  },
+                },
+                "register": [Function],
+                "shouldUnmount": undefined,
+                "subjectsRef": Object {
+                  "current": Object {
+                    "array": _e {
+                      "observers": Array [],
+                    },
+                    "control": _e {
+                      "observers": Array [],
+                    },
+                    "state": _e {
+                      "observers": Array [],
+                    },
+                    "watch": _e {
+                      "observers": Array [],
+                    },
+                  },
+                },
+                "unregister": [Function],
+                "updateIsValid": [Function],
+                "watchInternal": [Function],
+              }
+            }
+            name="creationDate"
+            render={[Function]}
+            rules={
+              Object {
+                "required": "Date is required",
+              }
+            }
+          />
+          <Component
+            control={
+              Object {
+                "defaultValuesRef": Object {
+                  "current": Object {},
+                },
+                "fieldArrayDefaultValuesRef": Object {
+                  "current": Object {},
+                },
+                "fieldsRef": Object {
+                  "current": Object {},
+                },
+                "formStateRef": Object {
+                  "current": Object {
+                    "dirtyFields": Object {},
+                    "errors": Object {},
+                    "isDirty": false,
+                    "isSubmitSuccessful": false,
+                    "isSubmitted": false,
+                    "isSubmitting": false,
+                    "isValid": false,
+                    "isValidating": false,
+                    "submitCount": 0,
+                    "touchedFields": Object {},
+                  },
+                },
+                "getIsDirty": [Function],
+                "inFieldArrayActionRef": Object {
+                  "current": false,
+                },
+                "namesRef": Object {
+                  "current": Object {
+                    "array": Set {},
+                    "mount": Set {},
+                    "unMount": Set {},
+                    "watch": Set {},
+                    "watchAll": false,
+                  },
+                },
+                "readFormStateRef": Object {
+                  "current": Object {
+                    "dirtyFields": false,
+                    "errors": false,
+                    "isDirty": false,
+                    "isValid": false,
+                    "isValidating": false,
+                    "touchedFields": false,
+                  },
+                },
+                "register": [Function],
+                "shouldUnmount": undefined,
+                "subjectsRef": Object {
+                  "current": Object {
+                    "array": _e {
+                      "observers": Array [],
+                    },
+                    "control": _e {
+                      "observers": Array [],
+                    },
+                    "state": _e {
+                      "observers": Array [],
+                    },
+                    "watch": _e {
+                      "observers": Array [],
+                    },
+                  },
+                },
+                "unregister": [Function],
+                "updateIsValid": [Function],
+                "watchInternal": [Function],
+              }
+            }
+            name="modificationDate"
+            render={[Function]}
+            rules={
+              Object {
+                "required": "Date is required",
+              }
+            }
+          />
+        </MuiPickersUtilsProvider>
+      </WithStyles(ForwardRef(Grid))>
+    </WithStyles(ForwardRef(DialogContent))>
+    <WithStyles(ForwardRef(DialogActions))>
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        onClick={[Function]}
+      >
+        Cancel
+      </WithStyles(ForwardRef(Button))>
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        type="submit"
+        variant="contained"
+      >
+        Apply Changes
+      </WithStyles(ForwardRef(Button))>
+    </WithStyles(ForwardRef(DialogActions))>
+  </form>
+</WithStyles(ForwardRef(Dialog))>
+`;

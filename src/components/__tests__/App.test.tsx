@@ -1,14 +1,14 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import { App } from '../App';
 
 describe('App component', () => {
 
     it('can be rendered', () => {
-        render(<App/>);
-        const title = screen.getByText(/untitled - pdf-scanner/i);
-
-        expect(title).toBeInTheDocument();
+        const wrapper = shallow(<App />);
+        const tree = toJson(wrapper);
+        expect(tree).toMatchSnapshot();
     });
 
 });

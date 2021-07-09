@@ -8,7 +8,7 @@ describe('pdf-lib', () => {
         const font = await pdfDoc.embedFont(StandardFonts.TimesRoman);
         const size = 30
 
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 5; i++) {
             const page = pdfDoc.addPage(PageSizes.A4);
             const { width, height } = page.getSize();
             const text = `Scanned page ${i + 1} of 10`;
@@ -35,13 +35,11 @@ describe('pdf-lib', () => {
         }
 
         pdfDoc.setTitle('Test Document');
-        pdfDoc.setAuthor('Richard Allwood');
         pdfDoc.setSubject('Document for testing pdf-scanner');
         pdfDoc.setKeywords([ 'test', 'pdf-scanner' ]);
-        pdfDoc.setProducer('pdf-scanner test');
-        pdfDoc.setCreator('pdf-lib');
+        pdfDoc.setCreator('');
+        pdfDoc.setProducer('');
         pdfDoc.setCreationDate(new Date('2021-07-02T01:03:00.000Z'));
-        pdfDoc.setModificationDate(new Date());
 
         const bytes = await pdfDoc.save();
         fs.writeFileSync('./test-document.pdf', Buffer.from(bytes));
